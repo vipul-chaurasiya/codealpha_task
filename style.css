@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body{
+    background-image: url("calculator.jpg");
+    background-size: cover;
+
+}
+
+
+.container .card{
+    margin-left: 10%;
+    margin-top: 10%;
+    max-width: 500px;
+}
+
+.card h1{
+    font-size: 60px;
+}
+
+.card h1::before{
+    position: absolute;
+    content: '';
+    left: 9%;
+    width: 5px;
+    height: 142.4px;
+    background-color: white;
+}
+
+
+.card span{
+   color: #0C090A;
+   font-size: 40px;
+}
+
+
+.input{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.input input{
+    flex: 1;
+    padding: 14px 20px;
+    margin-right: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+
+.input button{
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #0C090A;
+    transition: 0.3s;
+}
+
+
+.input button:hover{
+    background-color: #0ba4eb;
+}
+
+.input :hover{
+    font-size: 1rem;
+}
+
+#result{
+    color: #e6c50d ;
+    font-size: 22px;
+    align-items: center;
+    
+}
+
+#result span{
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card h1::before{
+        position: relative;
+    }
+    .card h1{
+        font-size: 40px;
+    }
+
+    #result{
+        color: #fff;
+        font-size: 14px;
+    }
+    
+}
